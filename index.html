@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paszko's skill site.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/my_styles.css">
+</head>
+
+<body class="body-dark">
+    <!-- Navigation -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navi-dark py-3 py-lg-0">
+            <div class="container">
+                <div class="navbar-brand">
+                    <code class="fs-5 d-none d-sm-inline">
+                        <span class="text-info">skilled_dev</span> = <span class="text-bg-success">User</span>('Łukasz', 'Paszko')
+                    </code>
+                    <code class="fs-5 d-sm-none">
+                        <span class="text-bg-success">User</span>('Łukasz', 'Paszko')
+                    </code>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a id="about_lnk" class="nav-link fs-5" href="#">_about</a></li>
+                        <li class="nav-item"><a id="skills_lnk" class="nav-link fs-5" href="#">_skills</a></li>
+                        <li class="nav-item"><a id="learning_lnk" class="nav-link fs-5" href="#">_learning</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                        <li class="nav-item" id="themeToggler">
+                            <a class="nav-link fs-5 d-lg-none text-info">
+                                <i class="themeIcon bi bi-brightness-high-fill"></i>
+                            </a>
+                            <button class="btn btn-link fs-4">
+                                <i class="themeIcon bi bi-brightness-high-fill d-none d-lg-block"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+
+    <div class="container-fluid m-0 vh-100 p-0">
+
+        <div class="container h-100" id="about">
+            <div class="spacer"></div>
+            <div class="container">
+                <h3 class="text-center">About section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, necessitatibus! Iure tenetur
+                    voluptas qui, dignissimos cupiditate ex neque quae aut labore distinctio mollitia magnam porro
+                    delectus
+                    tempore rem? Quos, ullam?</p>
+            </div>
+        </div>
+
+        <div class="container h-100 d-none" id="skills">
+            <div class="spacer"></div>
+            <div class="container">
+                <h3 class="text-center">Skills section</h3>
+                <ul>
+                    <li>Programming: Python, JavaScript, HTML, CSS</li>
+                    <li>Frameworks: Bootstrap, React</li>
+                    <li>Tools: Git, Docker</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container h-100 d-none" id="learning">
+            <div class="spacer"></div>
+            <div class="container">
+                <h2 class="text-center">Frature learning</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti mollitia dolores adipisci
+                    esse. Vitae dolor cumque, repellat ipsum porro fuga rem pariatur magnam eaque id voluptatibus omnis
+                    sint laboriosam?</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer-dark text-center border-top py-2 sticky-bottom">
+        <div class="container">
+            &copy; 2024 My Skills site | All Rights Reserved
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Theme Toggle Script -->
+    <script src="js/theme_toggle.js"></script>
+    <script src="js/spacer.js"></script>
+    <script src="js/nav_logic.js"></script>
+</body>
+
+</html>

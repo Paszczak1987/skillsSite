@@ -1,0 +1,96 @@
+.body-dark {
+  /* background-image: linear-gradient(
+      180deg,
+      rgba(33, 37, 41, 0.01),
+      rgba(33, 37, 41, 1) 85%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(13, 110, 253, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(255, 228, 132, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right,
+      rgba(113, 44, 249, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(214, 51, 132, 0.5),
+      transparent 50%
+    ); */
+  background-image: linear-gradient(
+      180deg,
+      rgba(33, 37, 41, 0.02),
+      rgba(33, 37, 41, 0.6) 85%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(45, 41, 255, 0.6),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at center right,
+      rgba(26, 221, 0, 0.2),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(230, 51, 215, 0.2),
+      transparent 50%
+    );
+}
+
+.body-light {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(248, 248, 255, 0.6) 85%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(255, 255, 255, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at center right,
+      rgba(221, 169, 0, 0.473),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      rgba(105, 255, 255, 0.568),
+      transparent 50%
+    );
+  /* background-color: ghostwhite; */
+}
+
+.navi-dark {
+  background: linear-gradient(
+    to right,
+    rgb(18, 18, 18) 40%,
+    rgba(33, 37, 41, 0.6)
+  );
+}
+
+.navi-light {
+  background: linear-gradient(
+    to right,
+    rgb(99, 160, 255, 0.2),
+    rgba(99, 160, 218)
+  );
+  /* background-color: rgba(99, 160, 218, 0.9); */
+}
+
+.footer-dark {
+  background-color: rgb(33, 37, 41);
+}
+
+.footer-light {
+  background-color: rgb(99, 160, 218, 0.6);
+}
