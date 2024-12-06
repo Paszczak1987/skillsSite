@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paszko's skill site.</title>
+    <title>Learning skills is fun! 😄</title>
     <!-- Bootstrap CSS -->
+    <link rel="icon" href="assets/icons/favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <link rel="stylesheet" href="css/my_styles.css">
 </head>
 
-<body class="body-dark">
+<body class="body-dark overflow-x-hidden">
+
     <!-- Navigation -->
+
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navi-dark py-3 py-lg-0">
+        <nav class="navbar navbar-expand-lg navi-dark py-3 py-lg-0 user-select-none">
             <div class="container">
                 <div class="navbar-brand">
                     <code class="fs-5 d-none d-sm-inline">
@@ -56,21 +59,51 @@
 
     <div class="container-fluid m-0 vh-100 p-0">
 
-        <div class="container h-100" id="about">
-            <div class="spacer"></div>
+        <section class="container h-100 appear py-5" id="about">
+            <!-- <div class="spacer"></div> -->
             <div class="container">
                 <h4 class="">Hi, my name is <span class="text-warning-emphasis"><strong>Łukasz Paszko</strong></span>.
                 </h4>
-                <p>My first interest in web development began in primary school, where I enjoyed creating simple
+                <p>
+                    My first interest in web development began in primary school, where I enjoyed creating simple
                     websites for fun. However, it wasn’t something I pursued seriously at the time. In the meantime, I
                     completed high school and college, eventually finding a job at TPA, where I have been working since
-                    2014. After all that, I rediscovered my passion for creating websites and programming. Since 2018, I
-                    have been dedicating myself to it more seriously.</p>
+                    2014. After all that, I rediscovered my interest for creating websites. Since 2018, I
+                    have been dedicating myself to it more seriously.
+                </p>
+                <p>
+                    I decided to begin by focusing on frontend development. I started with online courses
+                    and practicing on my own projects. <span class="fw-medium fst-italic">JavaScript</span> was the
+                    first
+                    programming language I
+                    learned, and
+                    together with <span class="fw-medium fst-italic">HTML</span> and <span
+                        class="fw-medium fst-italic">CSS</span>, it became
+                    the foundation of
+                    my understanding
+                    of how frontend for web
+                    applications are
+                    developed. Additionally, I have been using Bootstrap, which significantly helped in designing and
+                    structuring various projects, including the site you're currently reading. Through learning and
+                    experimentation, I gained confidence in using these technologies.
+                </p>
+                <p>
+                    Programming in JavaScript brought me a lot of fun, which led me to explore other languages. As a
+                    result, I completed an in-person <span class="fw-medium fst-italic">C++</span> course in Warsaw,
+                    further broadening my understanding of
+                    programming concepts. Working with C++ is quite different from web development. It focuses on areas
+                    like embedded programming for various microcontrollers (e.g., car computers, advanced medical
+                    machines, etc.), video games, physical simulations, and other fields that require high performance
+                    and low-level hardware control. As part of my C++ work, I developed two old school games using SFML
+                    library, which you can check
+                    out on my GitHub: <a href="https://github.com/Paszczak1987/SFML_snakeGame.git">snakeGame</a> and <a
+                        href="https://github.com/Paszczak1987/SFML_arkanoidGame.git">arkanoid</a>.
+                </p>
             </div>
-        </div>
+        </section>
 
-        <div class="container h-100 d-none" id="skills">
-            <div class="spacer"></div>
+        <section class="container h-100 py-5 hide" id="skills">
+            <!-- <div class="spacer"></div> -->
             <div class="container">
                 <h3 class="text-center">Skills section</h3>
                 <ul>
@@ -79,34 +112,41 @@
                     <li>Tools: Git, Docker</li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="container h-100 d-none" id="learning">
-            <div class="spacer"></div>
+        <section class="container h-100 py-5 hide" id="learning">
+            <!-- <div class="spacer"></div> -->
             <div class="container">
                 <h2 class="text-center">Frature learning</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti mollitia dolores adipisci
                     esse. Vitae dolor cumque, repellat ipsum porro fuga rem pariatur magnam eaque id voluptatibus omnis
                     sint laboriosam?</p>
             </div>
-        </div>
+        </section>
 
 
 
 
     </div>
+
     <!-- Footer -->
+
     <footer class="footer-dark text-center border-top py-2 sticky-bottom">
         <div class="container">
             &copy; 2024 My Skills site | All Rights Reserved
         </div>
     </footer>
+
     <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Theme Toggle Script -->
+
     <script src="js/theme_toggle.js"></script>
     <script src="js/spacer.js"></script>
     <script src="js/nav_logic.js"></script>
+
 </body>
 
 </html>

@@ -17,21 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             sections.forEach((section) => {
                 if (link_id === section.id) {
-                    section.classList.add("d-block");
-                    section.classList.remove("d-none");
+                    section.classList.remove("hide");
+                    setTimeout(() => {
+                        section.classList.add("appear");
+                    }, 500);
                 } else {
-                    section.classList.remove("d-block");
-                    section.classList.add("d-none");
+                    section.classList.add("hide");
+                    section.classList.remove("appear");
                 }
             });
 
         });
     });
-
-    sections.forEach((section) => {
-        console.log(section.id)
-    });
-
-
 
 });
