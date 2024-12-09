@@ -16,14 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
             link_id = e.target.id.slice(0, -4);
 
             sections.forEach((section) => {
+
                 if (link_id === section.id) {
-                    section.classList.remove("hide");
-                    setTimeout(() => {
-                        section.classList.add("appear");
-                    }, 500);
+                    section.classList.remove('d-none');
                 } else {
-                    section.classList.add("hide");
-                    section.classList.remove("appear");
+                    section.classList.add('d-none');
                 }
             });
 

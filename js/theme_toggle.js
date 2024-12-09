@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById("themeToggler");
     const themeIcons = document.querySelectorAll(".themeIcon");
     const navBar = document.querySelector(".navbar");
-    const footer = document.querySelector("footer")
+    const footer = document.getElementById("site-footer")
 
     // Toggle theme on button click
     toggleButton.addEventListener("click", () => {

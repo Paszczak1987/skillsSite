@@ -44,6 +44,18 @@
     );
 }
 
+/* body {
+  padding-right: 0 !important;
+} */
+
+/* body.modal-open {
+  padding-right: 0px;
+} */
+
+.modal {
+  padding-right: 0px !important;
+}
+
 .navi-dark {
   background: linear-gradient(
     to right,
@@ -66,26 +78,4 @@
 
 .footer-light {
   background-color: rgb(99, 160, 218, 0.6);
-}
-
-section {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.appear {
-  opacity: 1;
-  transform: translateX(-50%);
-  /* transition: opacity 0.4s ease, transform 0.4s ease; */
-  transition: opacity 0.5s linear, transform 0.5s ease;
-}
-
-.hide {
-  opacity: 0;
-  transform: translateX(50%);
-  /* transition: opacity 0.4s ease, transform 0.4s ease; */
-  transition: opacity 0.5s linear, transform 0.5s ease;
-  /* display: none; */
 }
