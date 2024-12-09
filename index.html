@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning skills is fun! 😄</title>
-    <!-- Bootstrap CSS -->
     <link rel="icon" href="assets/icons/favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-5.3.3.-dist/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+    <!-- My styles -->
     <link rel="stylesheet" href="css/my_styles.css">
+
 </head>
 
-<body class="body-dark overflow-x-hidden">
+<body class="body-dark overflow-x-hidden position-relative">
 
     <!-- Navigation -->
-
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navi-dark py-3 py-lg-0 user-select-none">
             <div class="container">
@@ -56,11 +58,9 @@
     </header>
 
     <!-- Sections -->
+    <div class="container-fluid m-0 min-vh-100 p-0 position-relative">
 
-    <div class="container-fluid m-0 vh-100 p-0">
-
-        <section class="container h-100 appear py-5" id="about">
-            <!-- <div class="spacer"></div> -->
+        <section class="container py-5" id="about">
             <div class="container">
                 <h4 class="pb-2">Hi, my name is <span class="text-warning-emphasis"><strong>Łukasz
                             Paszko</strong></span> and this is a brief story of how I learned my skills.
@@ -74,7 +74,8 @@
                 </p>
                 <p>
                     I decided to begin by focusing on frontend development. I started with online courses
-                    and practicing on my own projects. <span class="fw-medium fst-italic">JavaScript</span> was the
+                    and practicing on my own projects. <span class="fw-medium fst-italic">JavaScript</span>
+                    was the
                     first
                     programming language I
                     learned, and
@@ -131,20 +132,266 @@
             </div>
         </section>
 
-        <section class="container h-100 py-5 hide" id="skills">
-            <!-- <div class="spacer"></div> -->
+        <section class="container h-100 py-5 d-none" id="skills">
             <div class="container">
-                <h3 class="text-center">Skills section</h3>
-                <ul>
-                    <li>Programming: Python, JavaScript, HTML, CSS</li>
-                    <li>Frameworks: Bootstrap, React</li>
-                    <li>Tools: Git, Docker</li>
-                </ul>
+                <h4>My current <span class="text-warning-emphasis"><strong>skill stack</strong></span>.</h4>
+                <p>
+                    Witht this skill stack, I would describe myself as a
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#full_stack_desc">Full Stack
+                        Developer</a>. Who is that, you may ask? In English, there's a term for someone with versatile
+                    skills: a "Jack of all trades" or "All-skill Jack." Imagine a developer who can create a complete
+                    application, handling both frontend and backend. With Django, Python, and the background of what I
+                    learned earlier, I have acquired the skills to build web applications, managing everything from the
+                    user interface to server-side logic. This includes developing REST APIs, working with databases, and
+                    ensuring smooth performance and security across the entire system.
+                </p>
+
+                <div class="container border p-0">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <span><strong>Frontend</strong></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body bg-gradient">
+                                    <p class="text-center fw-medium">
+                                        At the frontend level, I ensure my skills are sufficient to create user-friendly
+                                        and
+                                        efficient views. Here are my frontend skills:
+                                    </p>
+                                    <ul class="list-group list-group-horizontal-md">
+                                        <li class="list-group-item">
+                                            <strong>
+                                                <a href="https://www.w3schools.com/html/default.asp"
+                                                    target="_blank">HTML</a>
+                                            </strong>
+                                            <p class="fw-light pt-1">
+                                                HyperText Markup Language is the standard language for creating web
+                                                pages.
+                                                It structures content using elements like headings, paragraphs, and
+                                                links.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.w3schools.com/css/default.asp"
+                                                    target="_blank">CSS</a></strong>
+                                            <p class="fw-light pt-1">
+                                                Cascading Style Sheets is a language used to style and format web pages.
+                                                It
+                                                controls the layout, colors, fonts, and overall visual design of a
+                                                website.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.w3schools.com/js/default.asp"
+                                                    target="_blank">JavaScript</a></strong>
+                                            <p class="fw-light pt-1">
+                                                JavaScript is a versatile programming language that adds interactivity
+                                                to
+                                                web pages. It enables dynamic features like animations, form validation,
+                                                and
+                                                real-time updates.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><a href="https://getbootstrap.com/"
+                                                    target="_blank">Bootstrap</a></strong>
+                                            <p class="fw-light pt-1">
+                                                Bootstrap is a popular CSS framework for building responsive and
+                                                mobile-first websites. It provides pre-designed components like buttons,
+                                                navigation bars, and grids, simplifying web development.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <span><strong>Backend</strong></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body bg-gradient">
+                                    <p class="text-center fw-medium">
+                                        This is where I feel most confident. Currently, I am intensively learning Python
+                                        and
+                                        Django, which are my favorite tools.<br>Among others, Python is my favorite
+                                        programming
+                                        language, and Django is such a well-built framework—working with it is very
+                                        convenient.
+                                    </p>
+                                    <ul class="list-group list-group">
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.python.org/"
+                                                    target="_blank">Python</a></strong>
+                                            <p class="fw-light pt-1">
+                                                Python is a high-level, versatile programming language known for its
+                                                simplicity and readability. It supports multiple programming paradigms,
+                                                including procedural, object-oriented, and functional programming.
+                                                Python is
+                                                widely used in web development, data analysis, machine learning,
+                                                automation,
+                                                and more, thanks to its extensive libraries and frameworks.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.djangoproject.com/"
+                                                    target="_blank">Django</a></strong>
+                                            <!-- <div class="container-fluid p-0"> -->
+                                            <p class="fw-light pt-1">
+                                                Django is a high-level Python web framework that enables rapid
+                                                development of secure and maintainable web-applications. It takes care
+                                                of
+                                                much
+                                                of the hassle of web development by providing built-in features such
+                                                as
+                                                an ORM (Object-Relational Mapping) for database management, a
+                                                templating
+                                                engine for views, and robust tools for security.
+                                            </p>
+                                            <p class="fw-light">
+                                                Django follows the "batteries-included" philosophy, meaning it comes
+                                                with everything you need to build a fully functioning web
+                                                application
+                                                out of the box. It handles database migrations, query optimization,
+                                                and
+                                                supports multiple databases seamlessly. With its powerful admin
+                                                interface, you can easily manage database records without writing
+                                                additional code.
+                                            </p>
+                                            <p class="fw-light">
+                                                Django is built on the MTV (Model-Template-View) architecture, which
+                                                separates concerns into three layers: models handle the database and
+                                                data logic, templates define the user-facing structure, and views act as
+                                                the intermediary, managing business logic and deciding which data to
+                                                present to the user.
+                                            </p>
+                                            <p class="fw-light">
+                                                Security is a key focus of Django, protecting your application from
+                                                common threats like SQL injection, cross-site scripting (XSS), and
+                                                cross-site request forgery (CSRF). It provides authentication and
+                                                authorization tools, ensuring that only authorized users can access
+                                                certain parts of the site.
+                                            </p>
+                                            <p class="fw-light">
+                                                Overall, Django is designed to simplify the development process,
+                                                allowing developers to focus on writing business logic and user
+                                                experience features, while it handles the infrastructure and
+                                                security.
+                                            </p>
+                                            <!-- </div> -->
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.postgresql.org/"
+                                                    target="_blank">PostgreSQL</a></strong>
+                                            <p class="fw-light pt-1">
+                                                PostgreSQL is a powerful, open-source relational database system known
+                                                for reliability, flexibility, and advanced features. It supports SQL
+                                                standards, handles complex queries, and is ideal for scalable
+                                                applications.
+
+                                                With support for JSON, window functions, and full-text search,
+                                                PostgreSQL is a versatile choice for modern development projects.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <span><strong>Tools</strong></span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body bg-gradient">
+                                    <p class="text-center fw-medium">A skilled developer should be familiar with the
+                                        right tools for their work. Among others, these are the tools I use.</p>
+                                    <ul class="list-group list-group-horizontal-md">
+                                        <li class="list-group-item">
+                                            <strong><a href="https://git-scm.com/" target="_blank">Git</a></strong>
+                                            <p class="fw-light pt-1">
+                                                Git is a distributed version control system that tracks code changes,
+                                                enables collaboration, and manages project versions. It allows teams to
+                                                work simultaneously on the same codebase while keeping a complete
+                                                history of changes.Every developer should know Git, as it is essential
+                                                for teamwork, accountability, and efficient workflows. It supports
+                                                experimenting with new features in isolated branches without affecting
+                                                the main codebase, making it a vital tool in software development.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong><a href="https://git-scm.com/" target="_blank">GitHub</a></strong>
+                                            <p class="fw-light pt-1">
+                                                GitHub is a web-based platform for hosting and managing Git
+                                                repositories. It enhances collaboration by providing tools for version
+                                                control, issue tracking, and code reviews, all in a centralized
+                                                location. Developers can share their work, contribute to open-source
+                                                projects, and use GitHub Actions for continuous integration and
+                                                deployment. Knowing GitHub is essential for developers, as it
+                                                streamlines teamwork
+                                                and showcases coding skills to potential employers. Its collaboration
+                                                features, like pull requests and discussion threads, make it a vital
+                                                tool for modern software development. See the repository for this site
+                                                <a href="https://github.com/Paszczak1987/skillsSite"
+                                                    target="_blank">here</a>.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group list-group-horizontal-md">
+                                        <li class="list-group-item">
+                                            <strong><a href="https://code.visualstudio.com/" target="_blank">Visual
+                                                    Studio
+                                                    Code</a></strong>
+                                            <p class="fw-light pt-1">
+                                                Visual Studio Code (VS Code) is a lightweight, open-source code editor
+                                                by Microsoft. It supports many languages and frameworks, offers
+                                                IntelliSense, Git integration, and a built-in terminal, boosting
+                                                productivity. Highly customizable with a rich extension marketplace, VS
+                                                Code is a
+                                                favorite among developers worldwide.
+                                            </p>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <strong><a href="https://www.jetbrains.com/pycharm/"
+                                                    target="_blank">PyCharm</a></strong>
+                                            <p class="fw-light pt-1">
+                                                PyCharm is a popular integrated development environment (IDE) for
+                                                Python, developed by JetBrains. It offers powerful features like code
+                                                completion, debugging, and integrated testing tools, making it ideal for
+                                                Python development. PyCharm also supports web development frameworks
+                                                like Django and Flask,
+                                                as well as database tools, version control integration, and virtual
+                                                environments. Its intelligent code assistance and user-friendly
+                                                interface help developers write efficient and maintainable code.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="container h-100 py-5 hide" id="learning">
-            <!-- <div class="spacer"></div> -->
+        <section class="container h-100 py-5 d-none" id="learning">
             <div class="container">
                 <h2 class="text-center">Frature learning</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti mollitia dolores adipisci
@@ -153,28 +400,61 @@
             </div>
         </section>
 
-
-
-
     </div>
 
-    <!-- Footer -->
+    <!-- Modals -->
+    <div class="modal fade" id="full_stack_desc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Full Stack Developer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <blockquote class="blockquote mb-0">
+                        <p class="pb-1 fs-6">
+                            A Full Stack Developer is a versatile software engineer who is capable of working on both
+                            the frontend and backend of web applications. They are skilled in a wide range of
+                            technologies and can
+                            develop the entire application, from the user interface to the server-side logic. On the
+                            frontend, they are
+                            proficient in languages and frameworks like HTML, CSS, JavaScript, and libraries such as
+                            React or Angular to create
+                            interactive and responsive user interfaces. On the backend, they use technologies like
+                            Python, Django,
+                            Node.js, or Java to handle server-side logic, manage databases, and build APIs. Full Stack
+                            Developers are also
+                            knowledgeable in areas like version control, cloud services, and deployment practices. They
+                            can work
+                            independently or as part of a team to create complete, scalable, and efficient web
+                            applications, ensuring that both the
+                            user-facing and server-side components function seamlessly together.
+                        </p>
+                        <footer class="blockquote-footer"><cite title="chatGPT">chatGPT</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer class="footer-dark text-center border-top py-2 sticky-bottom">
+
+
+    <!-- Footer -->
+    <footer class="footer-dark text-center border-top py-2 fixed-bottom" id="site-footer">
         <div class="container">
             &copy; 2024 My Skills site | All Rights Reserved
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
+    <script src="js/bootstrap-5.3.3.-dist/bootstrap.bundle.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Theme Toggle Script -->
-
+    <!-- My scripts -->
     <script src="js/theme_toggle.js"></script>
-    <script src="js/spacer.js"></script>
+    <!-- <script src="js/spacer.js"></script> -->
     <script src="js/nav_logic.js"></script>
+
 
 </body>
 

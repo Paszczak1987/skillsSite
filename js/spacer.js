@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let entry of entries) {
             spacers.forEach((spacer) => {
                 // spacer.style.height = entry.contentRect.height + 'px';
-                spacer.style.top = entry.contentRect.height + 'px';
+                // spacer.style.top = entry.contentRect.width + 'px';
             });
         };
     });
